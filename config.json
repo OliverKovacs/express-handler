@@ -1,0 +1,15 @@
+{
+    "azure": false,
+    "port": 8000,
+    "access": [ "/client" ],
+    "redirects": { 
+        "arr": [
+            { "fromPath": "html", "toPath": "/client/html/index.html" },
+            { "fromPath": "index", "toPath": "/client/html/index.html" },
+            { "fromPath": "404", "toPath": "/client/html/404.html" },
+            { "fromPath": "main", "toPath": "/client/js/main.js" }
+        ],
+        "default": "/client/html/index.html",
+        "notFound": "/client/html/404.html"
+    }
+}
